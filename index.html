@@ -103,19 +103,19 @@
 </code>
 <ul>
   <li>
-    <span class="desktop">drwxr-xr-x 2 nicolas nicolas &nbsp;&nbsp; 4096 Sep 9&nbsp;&nbsp;2020 </span>
+    <span class="desktop">drwxr-xr-x 2 nicolas nicolas &nbsp;&nbsp; 4096 Oct 2&nbsp;&nbsp;2013</span>
     <a href="https://github.com/nicolasdanelon" target="_blank" rel="nofollow">github</a>
   </li>
   <li>
-    <span class="desktop">drwxr-xr-x 2 nicolas nicolas &nbsp;&nbsp; 4096 Sep 9&nbsp;&nbsp;2020 </span>
+    <span class="desktop">drwxr-xr-x 2 nicolas nicolas &nbsp;&nbsp; 4096 Sep 9&nbsp;&nbsp;2011</span>
     <a href="https://ar.linkedin.com/in/nicolasdanelon" target="_blank" rel="nofollow">linkedin</a>
   </li>
   <li>
-    <span class="desktop">drwxr-xr-x 2 nicolas nicolas &nbsp;&nbsp; 4096 Sep 9&nbsp;&nbsp;2020 </span>
+    <span class="desktop">drwxr-xr-x 2 nicolas nicolas &nbsp;&nbsp; 4096 May 1&nbsp;&nbsp;2019</span>
     <a href="https://twitter.com/nicolas_danelon" target="_blank" rel="nofollow">twitter</a>
   </li>
   <li>
-    <span class="desktop">drwxr-xr-x 2 nicolas nicolas &nbsp;&nbsp; 4096 Sep 9&nbsp;&nbsp;2020 </span>
+    <span class="desktop">drwxr-xr-x 2 nicolas nicolas &nbsp;&nbsp; 4096 Jul 28&nbsp;2015</span>
     <a href="https://www.reddit.com/u/nicolasdanelon" target="_blank" rel="nofollow">reddit</a>
   </li>
 </ul>
@@ -125,10 +125,10 @@
 </div>
 <script>
   (async () => {
-    const url = "https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/linux/trunk/PKGBUILD"
+    const url = 'https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/linux/trunk/PKGBUILD'
     const response = await fetch(url);
     const text = await response.text();
-    const words = text.split("\n");
+    const words = text.split('\n');
     const pkgver = words.filter(word => word.indexOf('pkgver') === 0);
     const string_pkgver = pkgver.shift();
     document.getElementById('kernel-version').innerHTML = string_pkgver.split('=')[1];
