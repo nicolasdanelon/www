@@ -1,0 +1,8 @@
+- name: Copy single file to remote
+        uses: garygrossgarten/github-action-scp@release
+        with:
+          local: index.html
+          remote: public_html/web/index.html
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.PASSWORD }}
