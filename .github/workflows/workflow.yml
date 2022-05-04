@@ -1,4 +1,4 @@
-name: scp copy folder to remote via SSH
+name: Deploy and check HTML sintax
 
 on:
   push
