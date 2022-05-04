@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+      - name: HTML5Validator
+        uses: Cyb3r-Jak3/html5validator-action
+        with:
+          root: ./
+          blacklist: invalid
       - name: Copy single file to remote
         uses: garygrossgarten/github-action-scp@release
         with:
